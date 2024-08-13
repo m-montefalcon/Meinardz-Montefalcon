@@ -57,10 +57,6 @@ const App = () => {
         <h2 className="fade-in-up text-3xl sm:text-4xl mt-20 sm:mt-32 font-bold mb-6 sm:mb-8 text-center">
           Projects
         </h2>
-        <p className="text-base sm:text-lg text-gray-400 mb-8 text-center">
-          Showcase your projects here. You can add links to GitHub repositories,
-          live demos, or images of your work.
-        </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <Card
