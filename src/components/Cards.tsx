@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface CardProps {
   images: string[];
@@ -15,7 +15,6 @@ const Card: React.FC<CardProps> = ({
   title,
   description,
   githubLink,
-  liveDemoLink,
   stackDescription,
   role,
 }) => {
