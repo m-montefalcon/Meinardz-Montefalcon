@@ -1,5 +1,5 @@
 import cv from "../assets/Curriculum Vitae, Meinardz C. Montefalcon.pdf";
-
+import picture from "../assets/picture.png";
 const Home = () => {
   return (
     <>
@@ -28,7 +28,7 @@ const Home = () => {
         </a>
 
         <a
-          href="https://github.com/"
+          href="https://github.com/m-montefalcon"
           className="my-2 mr-1 flex items-center border-gray-700 text-gray-700 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
           style={{ display: "inline-flex" }}
         >
@@ -104,8 +104,8 @@ const Home = () => {
         <div className="relative w-72 h-72 md:w-96 md:h-96">
           <div className="relative rounded overflow-hidden shadow-lg w-full h-full flex items-center justify-center">
             <img
-              src="src/assets/picture.png" // Replace with your image URL
-              alt="John Doe"
+              src={picture}
+              alt="Meinardz Montefalcon"
               className="w-full h-full object-cover"
             />
             {/* Glow Effect */}
