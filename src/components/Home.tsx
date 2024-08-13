@@ -1,4 +1,3 @@
-import React from "react";
 import cv from "../assets/Curriculum Vitae, Meinardz C. Montefalcon.pdf";
 
 const Home = () => {
