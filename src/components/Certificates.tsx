@@ -1,10 +1,9 @@
 import electiveCert from "../assets/certs/Elective -certificate.pdf";
-import cyberOpsCert from "../assets/certs/Cybersecurity - -certificate.pdf";
 import webdevCert from "../assets/certs/webdev.pdf";
 const Certificates = () => {
   return (
     <>
-      <div className="grid grid-cols-1 m-2 mb-10 -sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-2">
+      <div className="grid grid-cols-1 m-2 mb-10 -sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-2">
         <a href={webdevCert}>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 font-semibold">
             The Complete 2024 Web Development Bootcamp (Udemy)
@@ -30,18 +29,12 @@ const Certificates = () => {
         </a>
         <a href="https://www.credly.com/earner/earned/badge/f4a09d81-c4b3-4e8a-b0b7-623618f8919a">
           <p className="text-base sm:text-lg md:text-xl text-gray-400 font-semibold">
-            CyberOps Associate (Cisco Networking Academy)
+            Cyber Security : CyberOps Associate (Cisco Networking Academy)
           </p>
         </a>
         <a href={electiveCert}>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 font-semibold">
             IoT Fundamentals: IoT Security (Cisco Networking Academy)
-          </p>
-        </a>
-
-        <a href={cyberOpsCert}>
-          <p className="text-base sm:text-lg md:text-xl text-gray-400 font-semibold">
-            Cyber Security : CyberOps Associate (Cisco Networking Academy)
           </p>
         </a>
       </div>
