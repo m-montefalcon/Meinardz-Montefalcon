@@ -17,7 +17,6 @@ const Card: React.FC<CardProps> = ({
   description,
   githubLink,
   features,
-  liveDemoLink,
   stackDescription,
   role,
 }) => {
