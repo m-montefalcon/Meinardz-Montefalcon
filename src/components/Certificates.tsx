@@ -9,7 +9,7 @@ const Certificates = () => {
             The Complete 2024 Web Development Bootcamp (Udemy)
           </p>
         </a>
-        <a href="https://www.credly.com/earner/earned/badge/f6f4b33f-0cee-4fc9-ac85-99d2e66841fc">
+        <a href="https://www.credly.com/badges/f6f4b33f-0cee-4fc9-ac85-99d2e66841fc">
           <p className="text-base sm:text-lg md:text-xl text-gray-400 font-semibold">
             JavaScript Essentials 1 (Cisco Networking Academy)
           </p>
@@ -21,13 +21,13 @@ const Certificates = () => {
           </p>
         </a>
 
-        <a href="https://www.credly.com/earner/earned/badge/b3d21bc0-603f-42cc-8eb5-4739c857ef52">
+        <a href="https://www.credly.com/badges/b3d21bc0-603f-42cc-8eb5-4739c857ef52">
           <p className="text-base sm:text-lg md:text-xl text-gray-400 font-semibold">
             CCNAv7: Enterprise Networking, Security, and Automation (Cisco
             Networking Academy)
           </p>
         </a>
-        <a href="https://www.credly.com/earner/earned/badge/f4a09d81-c4b3-4e8a-b0b7-623618f8919a">
+        <a href="https://www.credly.com/badges/f4a09d81-c4b3-4e8a-b0b7-623618f8919a">
           <p className="text-base sm:text-lg md:text-xl text-gray-400 font-semibold">
             Cyber Security : CyberOps Associate (Cisco Networking Academy)
           </p>
