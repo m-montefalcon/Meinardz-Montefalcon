@@ -4,6 +4,7 @@ interface CardProps {
   images: string[];
   title: string;
   description: string;
+  features: string[];
   githubLink: string;
   liveDemoLink: string;
   stackDescription: string;
@@ -15,6 +16,8 @@ const Card: React.FC<CardProps> = ({
   title,
   description,
   githubLink,
+  features,
+  liveDemoLink,
   stackDescription,
   role,
 }) => {
@@ -47,7 +50,7 @@ const Card: React.FC<CardProps> = ({
   };
 
   return (
-    <div>
+    <div className="flex justify-center">
       {/* Project Card */}
       <div className="w-full sm:w-full lg:w-3/4 bg-gray-800 rounded-lg shadow-lg overflow-hidden">
         <img
@@ -98,11 +101,11 @@ const Card: React.FC<CardProps> = ({
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg max-w-4xl w-full flex flex-col md:flex-row relative">
+          <div className="bg-gray-900 p-4 md:p-6 rounded-lg shadow-lg max-w-4xl w-full h-full md:h-auto max-h-full overflow-hidden md:overflow-auto flex flex-col md:flex-row relative">
             {/* Left Side: Sliding Images */}
-            <div className="md:w-2/3 w-full relative">
+            <div className="relative w-full md:w-2/3 h-64 md:h-auto flex justify-center items-center overflow-hidden">
               <div
-                className="relative w-full h-0"
+                className="relative w-full h-full"
                 style={{ paddingBottom: "56.25%" }}
               >
                 <img
@@ -113,29 +116,55 @@ const Card: React.FC<CardProps> = ({
               </div>
               <button
                 onClick={previousImage}
-                className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"
+                className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 transition-all duration-500 ease-in-out hover:-translate-x-1"
               >
-                ◀
+                <svg
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                >
+                  <path d="M872 474H286.9l350.2-304c5.6-4.9 2.2-14-5.2-14h-88.5c-3.9 0-7.6 1.4-10.5 3.9L155 487.8a31.96 31.96 0 000 48.3L535.1 866c1.5 1.3 3.3 2 5.2 2h91.5c7.4 0 10.8-9.2 5.2-14L286.9 550H872c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" />
+                </svg>
               </button>
               <button
                 onClick={nextImage}
-                className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"
+                className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10 transition-all duration-500 ease-in-out hover:translate-x-1"
               >
-                ▶
+                <svg
+                  viewBox="0 0 1024 1024"
+                  fill="currentColor"
+                  height="1em"
+                  width="1em"
+                  className=""
+                >
+                  <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z" />
+                </svg>
               </button>
             </div>
 
             {/* Right Side: Links and Text */}
-            <div className="md:w-1/3 w-full md:pl-6 mt-6 md:mt-0 text-white">
+            <div className="w-full md:w-1/3 md:pl-6 mt-4 md:mt-0 text-white overflow-auto md:overflow-hidden">
               <div className="mb-4">
-                <h2 className="text-2xl font-bold text-white">{title}</h2>
-                <h3 className="text-sm font-semibold text-blue-400 mt-1">
+                <h2 className="text-xl md:text-2xl font-bold text-white">
+                  {title}
+                </h2>
+                <h2 className="text-sm md:text-base font-normal text-gray-300 mt-2">
+                  {description}
+                </h2>
+                <h3 className="text-xs md:text-sm font-semibold text-blue-400 mt-1">
                   {role}
                 </h3>
               </div>
-
+              <h2 className="text-xl md:text-2xl font-bold text-white">
+                Features
+              </h2>
               <div className="text-gray-400 space-y-4">
-                <p>{description}</p>
+                <ul className="list-disc list-inside">
+                  {features.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
                 <p>{stackDescription}</p>
               </div>
 
@@ -179,9 +208,14 @@ const Card: React.FC<CardProps> = ({
               </div>
               <button
                 onClick={toggleModal}
-                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
               >
-                Close
+                <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em">
+                  <path
+                    fill="currentColor"
+                    d="M6.225 4.811a1 1 0 00-1.414 1.414L10.586 12 4.81 17.775a1 1 0 101.414 1.414L12 13.414l5.775 5.775a1 1 0 001.414-1.414L13.414 12l5.775-5.775a1 1 0 00-1.414-1.414L12 10.586 6.225 4.81z"
+                  />
+                </svg>
               </button>
             </div>
           </div>

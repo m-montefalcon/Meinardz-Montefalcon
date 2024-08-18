@@ -43,7 +43,7 @@ const App = () => {
         id="about"
         className="max-w-7xl min-h-screen mx-auto px-4 py-16 sm:px-6 lg:px-8"
       >
-        <h2 className="fade-in-up text-4xl mt-10 font-bold mb-4 flex justify-center">
+        <h2 className="fade-in-up text-4xl mt-10 font-bold mb-4 flex justify-center text-center">
           Skills and Certificates
         </h2>
         <Certificates />
@@ -63,6 +63,14 @@ const App = () => {
             images={[communisync1, communisync2, communisync3, communisync4]}
             title="CommuniSync"
             description="A Subdivision Management System"
+            features={[
+              "Mobile app visitor request approval with homeowner alerts.",
+              "Visitor entry blocking or banning.",
+              "QR-based logbook scanning.",
+              "Announcement system for users.",
+              "Homeowner complaint system.",
+              "Payment dues tracking with PDF access.",
+            ]}
             githubLink="https://github.com/m-montefalcon/CommuniSync"
             liveDemoLink=""
             stackDescription="Laravel | Blades | Flutter |  MariaDB | Firebase"
@@ -71,16 +79,30 @@ const App = () => {
           <Card
             images={[pancoffeeko1, pancoffeeko4, pancoffeeko3, pancoffeeko2]}
             title="PanCoffeeKo"
-            description="Inventory Mangement and POS System for Coffees"
+            description="Inventory Mangement and POS System for Coffee Shops (In Development)"
+            features={[
+              "Real-time sales and inventory tracking",
+              "Comprehensive audit of transactions and inventory movements",
+              "Supplier and stock management with printable PDFs",
+              "User management and profile settings",
+            ]}
             githubLink="https://github.com/m-montefalcon/PanCoffeeKo-Frontend"
-            liveDemoLink="https://your-live-demo-link-3.com"
+            liveDemoLink=""
             stackDescription="React | Typescript | Tailwind | DaisyUI | Laravel | MySQL"
             role="Full Stack Developer"
           />
           <Card
             images={[drinksaoh1, drinksaoh4, drinksaoh2, drinksaoh3]}
             title="DrinkSaOh"
-            description="Inventory Management System for snacks and beverages"
+            description="Inventory Management System"
+            features={[
+              "Real-time dashboard for tracking",
+              "Comprehensive inventory management",
+              "Comprehensive audit of all transactions and inventory movements",
+              "Printable PDFs for transactions and stock cards",
+              "Supplier management",
+              "User management and profile settings",
+            ]}
             githubLink="https://github.com/m-montefalcon/DrinkSaOh"
             liveDemoLink=""
             role="Project Head | Mobile Developer | Full Stack Developer"
@@ -91,6 +113,12 @@ const App = () => {
             images={[meimoreis2, meimoreis1, meimoreis3]}
             title="MeiMoreIS"
             description="A simple social media application"
+            features={[
+              "Post and manage memories",
+              "Like and comment on posts",
+              "JWT authentication for login and registration",
+              "Responsive design",
+            ]}
             githubLink="https://github.com/m-montefalcon/meimoreis_backend"
             liveDemoLink=""
             stackDescription="React | Bootstrap | NodeJS | Express | PostgreSQL"
@@ -103,7 +131,7 @@ const App = () => {
         id="contact"
         className="max-w-7xl mx-auto mt-20 px-4 py-16 sm:px-6 lg:px-8"
       >
-        <h2 className="flex justify-center text-3xl font-bold mb-4 mt-10">
+        <h2 className="fade-in-up text-4xl mt-10 font-bold mb-4 flex justify-center text-center">
           Reach me at the following{" "}
         </h2>
         <Contact />

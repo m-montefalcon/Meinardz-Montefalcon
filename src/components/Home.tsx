@@ -7,10 +7,10 @@ const Home = () => {
         <h1 className="text-6xl font-extrabold text-white mb-2 mt-10">
           Meinardz Montefalcon
         </h1>
-        <p className="text-xl text-gray-400">A Software Web Developer</p>
+        <p className="text-xl text-slate-200">A Software Web Developer</p>
         <a
           href="https://www.linkedin.com/in/meinardzmontefalcon"
-          className="my-2 mr-1 flex items-center border-gray-700 text-gray-700 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
+          className="my-2 mr-1 flex items-center border-gray-700 text-slate-300 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
           style={{ display: "inline-flex" }}
         >
           <span className="flex items-center space-x-2">
@@ -19,7 +19,7 @@ const Home = () => {
               fill="currentColor"
               height="1em"
               width="1em"
-              className="text-gray-700"
+              className="text-slate-300"
             >
               <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z" />
             </svg>
@@ -29,7 +29,7 @@ const Home = () => {
 
         <a
           href="https://github.com/m-montefalcon"
-          className="my-2 mr-1 flex items-center border-gray-700 text-gray-700 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
+          className="my-2 mr-1 flex items-center border-gray-700 text-slate-300 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
           style={{ display: "inline-flex" }}
         >
           <span className="flex items-center space-x-2">
@@ -47,7 +47,7 @@ const Home = () => {
 
         <a
           href="https://www.facebook.com/meinardz.montefalcon"
-          className="my-2 mr-1 flex items-center border-gray-700 text-gray-700 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
+          className="my-2 mr-1 flex items-center border-gray-700 text-slate-300 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
           style={{ display: "inline-flex" }}
         >
           <span className="flex items-center space-x-2">
@@ -65,7 +65,7 @@ const Home = () => {
         <br />
         <a
           href={cv}
-          className="my-2 mr-1 flex items-center border-gray-700 text-gray-700 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
+          className="my-2 mr-1 flex items-center border-gray-700 text-slate-300 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
           style={{ display: "inline-flex" }}
         >
           <span className="flex items-center space-x-2">
@@ -78,12 +78,12 @@ const Home = () => {
               <path d="M280 240a8 8 0 01-8-8V48h-57.25a65.42 65.42 0 00-6.5-9.81C196.72 23.88 179.59 16 160 16c-37.68 0-64 29.61-64 72v144c0 25 20.34 40 40 40a39.57 39.57 0 0040-40V80h-32v152a7.75 7.75 0 01-8 8c-2.23 0-8-1.44-8-8V88c0-19.34 8.41-40 32-40 29.69 0 32 30.15 32 39.38v138.75c0 17.45-5.47 33.23-15.41 44.46C166.5 282 152.47 288 136 288s-30.5-6-40.59-17.41C85.47 259.36 80 243.58 80 226.13V144H48v82.13c0 51.51 33.19 89.63 80 93.53V468a12 12 0 0012 12h312a12 12 0 0012-12V240z" />
               <path d="M308 208h146.31a2 2 0 001.42-3.41L307.41 56.27a2 2 0 00-3.41 1.42V204a4 4 0 004 4z" />
             </svg>
-            <span>Curriculum vitae</span>
+            <span>Curriculum Vitae</span>
           </span>
         </a>
         <a
           href="mailto:meinardz2001@gmail.com"
-          className="my-2 mr-1 flex items-center border-gray-700 text-gray-700 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
+          className="my-2 mr-1 flex items-center border-gray-700 text-slate-300 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
           style={{ display: "inline-flex" }}
         >
           <span className="flex items-center space-x-2">
