@@ -7,7 +7,6 @@ import {
   FirebaseIcon, 
   FlutterIcon, 
   GithubIcon, 
-  HoppscotchIcon, 
   JavaScriptIcon, 
   LaravelIcon, 
   LinuxIcon, 
