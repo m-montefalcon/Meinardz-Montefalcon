@@ -7,7 +7,7 @@ const Home = () => {
         <h1 className="text-6xl font-extrabold text-white mb-2 mt-10">
           Meinardz Montefalcon
         </h1>
-        <p className="text-xl text-slate-200">A Software Web Developer</p>
+        <p className="text-xl text-slate-200">Full Stack Software Engineer</p>
         <a
           href="https://www.linkedin.com/in/meinardzmontefalcon"
           className="my-2 mr-1 flex items-center border-gray-700 text-slate-300 bg-transparent rounded px-4 py-2 hover:bg-gray-700 hover:text-white transition-colors fade-in-up"
